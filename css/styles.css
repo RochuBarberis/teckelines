@@ -29,6 +29,7 @@ header {
 .navbar-toggler-icon {
     background-image: url(./../img/menu-burger.svg);
     background-color: transparent;
+    font-size: 30px;
 }
 
 .navbar-nav {
@@ -482,5 +483,8 @@ footer a img {
     .carousel-item-start,
     .carrousel-item {
         height: 180px;
+    }
+    .navbar-toggler-icon {
+        font-size: 20px;
     }
 }
