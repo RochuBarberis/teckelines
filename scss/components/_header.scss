@@ -1,0 +1,41 @@
+header {
+    background-color: rgb(226, 217, 208);
+    .bg-body-tertiary{
+        --bs-bg-opacity: 0 --bs-tertiary-bg-rgb: rgb(226, 217, 208) background-color: rgba(226, 217, 208, 0 --bs-tertiary-bg-rgb: rgb(226, 217, 208)) !important;
+        .container-fluid {
+            background-color: rgb(226, 217, 208);
+            .navbar-brand {
+                font-family: 'Indie Flower', cursive;
+                color: rgb(78, 78, 71);
+                font-size: 7.2vw;
+                background-color: transparent;
+                padding-left: 20px;
+            }
+            .navbar-toggler {
+                border: none;
+                &:focus{
+                    box-shadow: none;
+                    .navbar-toggler-icon {
+                        background-image: url(./../img/menu-burger.svg);
+                        background-color: transparent;
+                        font-size: 30px;
+                    }
+                }
+            div{
+                .navbar-nav {
+                    gap: 20px;
+                    align-items: flex-end;
+                    .nav-list {
+                        font-family: Arial, Helvetica, sans-serif;
+                        text-decoration: none;
+                        color: dimgray;
+                        font-weight: bold;
+                        font-size: 1.7vw;
+                        background-color: transparent;
+                    }
+                }
+            }
+            }
+        }
+    }
+}

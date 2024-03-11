@@ -1,3 +1,84 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: rgb(248, 248, 236);
+  font-size: 62.5%;
+}
 
+header {
+  background-color: rgb(226, 217, 208);
+}
+header .bg-body-tertiary {
+  --bs-bg-opacity: 0 --bs-tertiary-bg-rgb: rgb(226, 217, 208) background-color: rgba(226, 217, 208, 0 --bs-tertiary-bg-rgb: rgb(226, 217, 208)) !important;
+}
+header .bg-body-tertiary .container-fluid {
+  background-color: rgb(226, 217, 208);
+}
+header .bg-body-tertiary .container-fluid .navbar-brand {
+  font-family: "Indie Flower", cursive;
+  color: rgb(78, 78, 71);
+  font-size: 7.2vw;
+  background-color: transparent;
+  padding-left: 20px;
+}
+header .bg-body-tertiary .container-fluid .navbar-toggler {
+  border: none;
+}
+header .bg-body-tertiary .container-fluid .navbar-toggler:focus {
+  box-shadow: none;
+}
+header .bg-body-tertiary .container-fluid .navbar-toggler:focus .navbar-toggler-icon {
+  background-image: url(./../img/menu-burger.svg);
+  background-color: transparent;
+  font-size: 30px;
+}
+header .bg-body-tertiary .container-fluid .navbar-toggler div .navbar-nav {
+  gap: 20px;
+  align-items: flex-end;
+}
+header .bg-body-tertiary .container-fluid .navbar-toggler div .navbar-nav .nav-list {
+  font-family: Arial, Helvetica, sans-serif;
+  text-decoration: none;
+  color: dimgray;
+  font-weight: bold;
+  font-size: 1.7vw;
+  background-color: transparent;
+}
+
+footer {
+  background-color: rgb(248, 248, 236);
+  padding: 50px 0px 50px 0px;
+}
+footer a {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  font-family: "Satisfy", cursive;
+  font-size: 5em;
+  color: rgb(78, 78, 71);
+  text-decoration: none;
+}
+footer a img {
+  height: 20px;
+}
+
+@media screen and (min-width: 992px) {
+  header .navbar-expand-lg {
+    display: flex;
+    flex-basis: auto;
+    justify-content: right;
+    background-color: transparent;
+  }
+  header .navbar-expand-lg .container-fluid .navbar-collapse {
+    display: flex;
+    flex-basis: auto;
+    justify-content: right;
+    background-color: transparent;
+  }
+  header .navbar-expand-lg .container-fluid .navbar-collapse .navbar-nav {
+    background-color: transparent;
+  }
+}
 
 /*# sourceMappingURL=main.css.map */

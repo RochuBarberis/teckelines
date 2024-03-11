@@ -1,0 +1,22 @@
+@media screen and (min-width: 992px) {
+    header{
+        .navbar-expand-lg {
+            display: flex;
+            flex-basis: auto;
+            justify-content: right;
+            background-color: transparent;
+            .container-fluid{
+                .navbar-collapse{
+                    display: flex;
+                    flex-basis: auto;
+                    justify-content: right;
+                    background-color: transparent;
+                    .navbar-nav{
+                        background-color: transparent;
+                    }
+                }
+            }
+        }
+    }
+}
+
