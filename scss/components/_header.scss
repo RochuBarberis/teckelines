@@ -2,6 +2,8 @@ header {
     background-color: rgb(226, 217, 208);
     .bg-body-tertiary{
         --bs-bg-opacity: 0 --bs-tertiary-bg-rgb: rgb(226, 217, 208) background-color: rgba(226, 217, 208, 0 --bs-tertiary-bg-rgb: rgb(226, 217, 208)) !important;
+    }
+    nav{
         .container-fluid {
             background-color: rgb(226, 217, 208);
             .navbar-brand {
@@ -15,12 +17,13 @@ header {
                 border: none;
                 &:focus{
                     box-shadow: none;
-                    .navbar-toggler-icon {
-                        background-image: url(./../img/menu-burger.svg);
-                        background-color: transparent;
-                        font-size: 30px;
-                    }
                 }
+                .navbar-toggler-icon {
+                    background-image: url(./../img/menu-burger.svg);
+                    background-color: transparent;
+                    font-size: 30px;
+                }
+            }
             div{
                 .navbar-nav {
                     gap: 20px;
@@ -34,7 +37,6 @@ header {
                         background-color: transparent;
                     }
                 }
-            }
             }
         }
     }

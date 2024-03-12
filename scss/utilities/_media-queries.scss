@@ -20,3 +20,145 @@
     }
 }
 
+@media screen and (max-width: 991px) {
+    header{
+        nav{
+            .container-fluid{
+                padding-left: 0;
+                .navbar-brand {
+                    font-size: 12vw;
+                }
+                div{
+                    .navbar-nav {
+                        position: absolute;
+                        top: 15vw;
+                        width: 100%;
+                        padding: 0 25px 0px 0px;
+                        margin: 0;
+                        background-color: rgb(226, 217, 208);
+                        z-index: 1;
+                        --bs-gutter-x: 0;
+                        padding-left: calc(var(--bs-gutter-x) *0);
+                        .nav-list {
+                            font-size: 4vw;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    main{
+        h1{
+            font-size: 8vw;
+        }
+        .imagen-con-texto{
+            p{
+                font-size: 3.5vw;
+            }
+        }
+        .boton-productos {
+            font-size: 4vw;
+        }
+        .catalogo-general {
+            display: grid;
+            justify-content: center;
+            grid-template-columns: 1fr;
+            grid-template-rows: repeat(4, auto);
+            gap: 3em;
+            width: 60%;
+            .catalogo{
+                h2{
+                    font-size: 5vw;
+                }
+                div{
+                    .carousel-inner{
+                        height: 270px;
+                        .carrousel-item {
+                            height: 270px;
+                        }
+                    }
+                }
+            }
+        }
+        .fotos{
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: repeat(10, auto);
+            grid-template-areas:
+                "img1"
+                "img2"
+                "img3"
+                "img4"
+                "img5"
+                "img6"
+                "img7"
+                "img8"
+                "img9"
+                "img10";
+            width: 90%;
+            padding-top: 20px;
+            gap: 1em;
+        }
+        .nosotros{
+            display: grid;
+            justify-content: center;
+            grid-template-columns: 1fr;
+            grid-template-rows: repeat(2, auto);
+            gap: 1em;
+            width: 80%;
+            align-items: center;
+            .nosotros-p {
+                font-size: 5vw;
+            }
+        }
+        .contacto{
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 3em;
+            width: 80%;
+            .form{
+                div{
+                    input{
+                        font-size: 2.5vw;
+                    }
+                    textarea{
+                        font-size: 2.5vw;
+                    }
+                    label {
+                        font-size: 2.5vw;
+                    }
+                }
+            }
+        }
+    }
+    footer{
+        a{
+            font-size: 6vw;
+        }
+    }
+}
+@media screen and (max-width:600px){
+    header{
+        nav{
+            div{
+                .navbar-toggler-icon {
+                    font-size: 20px;
+                }
+            }
+        }
+    }
+    main{
+        .catalogo-general{
+            .catalogo{
+                div{
+                    .carousel-inner{
+                        height: 180px;
+                        .carrousel-item {
+                            height: 180px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

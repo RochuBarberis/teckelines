@@ -6,44 +6,292 @@
   font-size: 62.5%;
 }
 
+main {
+  background-color: rgb(248, 248, 236);
+  display: flex;
+  align-items: center;
+  flex-flow: column wrap;
+  font-family: Arial, Helvetica, sans-serif;
+}
+main h1 {
+  font-family: "Satisfy", cursive;
+  font-size: 5vw;
+  color: rgb(85, 67, 67);
+  padding: 6vw 0;
+  text-align: center;
+}
+
 header {
   background-color: rgb(226, 217, 208);
 }
 header .bg-body-tertiary {
   --bs-bg-opacity: 0 --bs-tertiary-bg-rgb: rgb(226, 217, 208) background-color: rgba(226, 217, 208, 0 --bs-tertiary-bg-rgb: rgb(226, 217, 208)) !important;
 }
-header .bg-body-tertiary .container-fluid {
+header nav .container-fluid {
   background-color: rgb(226, 217, 208);
 }
-header .bg-body-tertiary .container-fluid .navbar-brand {
+header nav .container-fluid .navbar-brand {
   font-family: "Indie Flower", cursive;
   color: rgb(78, 78, 71);
   font-size: 7.2vw;
   background-color: transparent;
   padding-left: 20px;
 }
-header .bg-body-tertiary .container-fluid .navbar-toggler {
+header nav .container-fluid .navbar-toggler {
   border: none;
 }
-header .bg-body-tertiary .container-fluid .navbar-toggler:focus {
+header nav .container-fluid .navbar-toggler:focus {
   box-shadow: none;
 }
-header .bg-body-tertiary .container-fluid .navbar-toggler:focus .navbar-toggler-icon {
+header nav .container-fluid .navbar-toggler .navbar-toggler-icon {
   background-image: url(./../img/menu-burger.svg);
   background-color: transparent;
   font-size: 30px;
 }
-header .bg-body-tertiary .container-fluid .navbar-toggler div .navbar-nav {
+header nav .container-fluid div .navbar-nav {
   gap: 20px;
   align-items: flex-end;
 }
-header .bg-body-tertiary .container-fluid .navbar-toggler div .navbar-nav .nav-list {
+header nav .container-fluid div .navbar-nav .nav-list {
   font-family: Arial, Helvetica, sans-serif;
   text-decoration: none;
   color: dimgray;
   font-weight: bold;
   font-size: 1.7vw;
   background-color: transparent;
+}
+
+.portada .imagen-con-texto {
+  display: flex;
+  flex-flow: column wrap;
+  width: 90%;
+  overflow: hidden;
+  align-items: center;
+  position: relative;
+}
+.portada .imagen-con-texto img {
+  display: flex;
+  width: 90%;
+  text-align: center;
+}
+.portada .imagen-con-texto p {
+  background-color: transparent;
+  color: antiquewhite;
+  position: relative;
+  bottom: 10vw;
+  font-size: 3.2vw;
+  width: 80%;
+}
+.portada .boton-productos {
+  border: 3px solid grey;
+  width: fit-content;
+  padding: 2vw;
+  align-self: center;
+  font-size: 2.7vw;
+  box-shadow: 5px -5px grey;
+}
+.portada .boton-productos a {
+  color: gray;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+main .catalogo-general {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, auto);
+  gap: 10em;
+  width: 70%;
+}
+main .catalogo-general .catalogo {
+  border: 2px solid dimgray;
+  border-radius: 5%;
+  display: grid;
+  box-shadow: 5px 5px 0px 0px gray;
+}
+main .catalogo-general .catalogo h2 {
+  font-family: "Satisfy", cursive;
+  font-size: 3.2vw;
+  color: rgb(85, 67, 67);
+  text-align: center;
+  padding-top: 5px;
+}
+main .catalogo-general .catalogo div .carousel-inner {
+  height: 320px;
+}
+main .catalogo-general .catalogo div .carousel-inner .carrousel-item {
+  height: 320px;
+  width: 90%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 5% 5%;
+  margin: 20px auto auto;
+  float: none;
+}
+main .catalogo-general .catalogo div .carousel-inner div img {
+  border-radius: 5% 5%;
+}
+main .catalogo-general .catalogo div button .carousel-control-prev-icon {
+  background-color: transparent;
+}
+main .catalogo-general .catalogo div button .carousel-control-next-icon {
+  background-color: transparent;
+}
+
+main .fotos {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(4, auto);
+  grid-template-areas: "img1 img1 img9 img3" "img4 img2 img9 img3" "img4 img6 img7 img7" "img8 img8 img5 img10";
+  width: 90%;
+  padding-top: 20px;
+  gap: 1em;
+}
+main .fotos img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+main .fotos .img1 {
+  grid-area: img1;
+}
+main .fotos .img2 {
+  grid-area: img2;
+}
+main .fotos .img3 {
+  grid-area: img3;
+}
+main .fotos .img4 {
+  grid-area: img4;
+}
+main .fotos .img5 {
+  grid-area: img5;
+}
+main .fotos .img6 {
+  grid-area: img6;
+}
+main .fotos .img7 {
+  grid-area: img7;
+}
+main .fotos .img8 {
+  grid-area: img8;
+}
+main .fotos .img9 {
+  grid-area: img9;
+}
+main .fotos .img10 {
+  grid-area: img10;
+}
+main .video {
+  display: grid;
+  grid-template-columns: 1fr;
+  width: 90%;
+  padding-top: 1rem;
+}
+main .video video {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+main .nosotros {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, auto);
+  gap: 3em;
+  width: 80%;
+  align-items: center;
+}
+main .nosotros .nosotros-imagenes {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, auto);
+  grid-template-areas: "nosotros-img1 nosotros-img1" "nosotros-img2 nosotros-img3";
+  width: 100%;
+}
+main .nosotros .nosotros-imagenes img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+main .nosotros .nosotros-imagenes .nosotros-img1 {
+  grid-area: nosotros-img1;
+}
+main .nosotros .nosotros-imagenes .nosotros-img2 {
+  grid-area: nosotros-img2;
+}
+main .nosotros .nosotros-imagenes .nosotros-img3 {
+  grid-area: nosotros-img3;
+}
+main .nosotros .nosotros-p {
+  font-family: "Satisfy", cursive;
+  font-size: 2.5vw;
+  color: rgb(85, 67, 67);
+  text-align: center;
+  margin-bottom: 0;
+}
+
+main .contacto {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 3em;
+  width: 80%;
+}
+main .contacto div {
+  align-self: baseline;
+}
+main .contacto div .video-contacto {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+main .contacto .form div {
+  padding: 10px 0;
+  display: flex;
+  align-items: baseline;
+}
+main .contacto .form div label {
+  width: 100px;
+  font-size: 1.2vw;
+}
+main .contacto .form div #nombre {
+  border: darkgrey solid 1px;
+  resize: none;
+  padding-left: 2px;
+}
+main .contacto .form div #email {
+  border: darkgrey solid 1px;
+  resize: none;
+  padding-left: 2px;
+}
+main .contacto .form div #mensaje {
+  border: darkgrey solid 1px;
+  resize: none;
+  padding-left: 2px;
+}
+main .contacto .form div input {
+  font-size: 1.2vw;
+}
+main .contacto .form div textarea {
+  font-size: 1.2vw;
+}
+main .contacto .form .enviar {
+  display: flex;
+  justify-content: center;
+}
+main .contacto .form .enviar #enviar {
+  padding: 5px;
+  border-radius: 15%;
+  border: darkgrey solid 1px;
+  box-shadow: 2px -2px rgb(246, 236, 226);
+  background-color: rgb(226, 217, 208);
+}
+main .contacto .form .enviar #enviar:focus {
+  background-color: rgb(86, 64, 64);
+  color: aliceblue;
 }
 
 footer {
@@ -78,6 +326,104 @@ footer a img {
   }
   header .navbar-expand-lg .container-fluid .navbar-collapse .navbar-nav {
     background-color: transparent;
+  }
+}
+@media screen and (max-width: 991px) {
+  header nav .container-fluid {
+    padding-left: 0;
+  }
+  header nav .container-fluid .navbar-brand {
+    font-size: 12vw;
+  }
+  header nav .container-fluid div .navbar-nav {
+    position: absolute;
+    top: 15vw;
+    width: 100%;
+    padding: 0 25px 0px 0px;
+    margin: 0;
+    background-color: rgb(226, 217, 208);
+    z-index: 1;
+    --bs-gutter-x: 0;
+    padding-left: calc(var(--bs-gutter-x) * 0);
+  }
+  header nav .container-fluid div .navbar-nav .nav-list {
+    font-size: 4vw;
+  }
+  main h1 {
+    font-size: 8vw;
+  }
+  main .imagen-con-texto p {
+    font-size: 3.5vw;
+  }
+  main .boton-productos {
+    font-size: 4vw;
+  }
+  main .catalogo-general {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, auto);
+    gap: 3em;
+    width: 60%;
+  }
+  main .catalogo-general .catalogo h2 {
+    font-size: 5vw;
+  }
+  main .catalogo-general .catalogo div .carousel-inner {
+    height: 270px;
+  }
+  main .catalogo-general .catalogo div .carousel-inner .carrousel-item {
+    height: 270px;
+  }
+  main .fotos {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(10, auto);
+    grid-template-areas: "img1" "img2" "img3" "img4" "img5" "img6" "img7" "img8" "img9" "img10";
+    width: 90%;
+    padding-top: 20px;
+    gap: 1em;
+  }
+  main .nosotros {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, auto);
+    gap: 1em;
+    width: 80%;
+    align-items: center;
+  }
+  main .nosotros .nosotros-p {
+    font-size: 5vw;
+  }
+  main .contacto {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 3em;
+    width: 80%;
+  }
+  main .contacto .form div input {
+    font-size: 2.5vw;
+  }
+  main .contacto .form div textarea {
+    font-size: 2.5vw;
+  }
+  main .contacto .form div label {
+    font-size: 2.5vw;
+  }
+  footer a {
+    font-size: 6vw;
+  }
+}
+@media screen and (max-width: 600px) {
+  header nav div .navbar-toggler-icon {
+    font-size: 20px;
+  }
+  main .catalogo-general .catalogo div .carousel-inner {
+    height: 180px;
+  }
+  main .catalogo-general .catalogo div .carousel-inner .carrousel-item {
+    height: 180px;
   }
 }
 

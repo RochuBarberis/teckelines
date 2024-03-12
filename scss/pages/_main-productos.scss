@@ -1,0 +1,50 @@
+main{
+    .catalogo-general {
+        display: grid;
+        justify-content: center;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, auto);
+        gap: 10em;
+        width: 70%;
+        .catalogo {
+            border: 2px solid dimgray;
+            border-radius: 5%;
+            display: grid;
+            box-shadow: 5px 5px 0px 0px gray;
+            h2{
+                font-family: 'Satisfy', cursive;
+                font-size: 3.2vw;
+                color: rgb(85, 67, 67);
+                text-align: center;
+                padding-top: 5px;
+            }
+            div{
+                .carousel-inner{
+                    height: 320px;
+                    .carrousel-item{
+                        height: 320px;
+                        width: 90%;
+                        height: auto;
+                        object-fit: cover;
+                        border-radius: 5% 5%;
+                        margin: 20px auto auto;
+                        float: none;
+                    }
+                    div{
+                        img{
+                            border-radius: 5% 5%;
+                        }
+                    }
+                }
+                button{
+                    .carousel-control-prev-icon {
+                        background-color: transparent;
+                    }
+                    .carousel-control-next-icon {
+                        background-color: transparent;
+                    }
+                }
+            }
+        }
+    }
+}
