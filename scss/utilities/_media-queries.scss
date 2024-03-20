@@ -152,6 +152,11 @@
         }
     }
     main{
+        .boton-productos{
+            a{
+                font-size: 15px;
+            }
+        }
         .catalogo-general{
             .catalogo{
                 div{
@@ -170,6 +175,7 @@
             .nosotros-p{
                 display: flex;
                 position: absolute;
+                padding: 2px;
                 background-color: transparent;
                 color:floralwhite
             }

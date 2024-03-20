@@ -451,6 +451,9 @@ footer a img {
   header nav div .navbar-toggler-icon {
     font-size: 20px;
   }
+  main .boton-productos a {
+    font-size: 15px;
+  }
   main .catalogo-general .catalogo div .carousel-inner {
     height: 180px;
   }
@@ -464,6 +467,7 @@ footer a img {
   main .nosotros .nosotros-p {
     display: flex;
     position: absolute;
+    padding: 2px;
     background-color: transparent;
     color: floralwhite;
   }
