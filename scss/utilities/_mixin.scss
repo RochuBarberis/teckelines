@@ -1,0 +1,8 @@
+@mixin grid($justify-content, $qcolumn,$spaceinscreen,$qrow,$gap,$width) {
+    display: grid;
+    justify-content: $justify-content;
+    grid-template-columns: repeat($qcolumn, $spaceinscreen);
+    grid-template-rows: repeat($qrow, auto);
+    gap: $gap;
+    width: $width;
+}

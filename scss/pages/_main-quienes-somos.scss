@@ -1,21 +1,23 @@
 main{
     .nosotros{
-        display: grid;
-        justify-content: center;
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(2, auto);
-        gap: 3em;
-        width: 80%;
+        // display: grid;
+        // justify-content: center;
+        // grid-template-columns: repeat(2, 1fr);
+        // grid-template-rows: repeat(2, auto);
+        // gap: 3em;
+        // width: 80%;
+        @include grid(center,2,1fr,2,3em,80%);
         align-items: center;
         .nosotros-imagenes {
-            display: grid;
-            justify-content: center;
-            grid-template-columns: repeat(2, 1fr);
-            grid-template-rows: repeat(2, auto);
+            @include grid(center, 2,1fr,2,0,100%);
+            // display: grid;
+            // justify-content: center;
+            // grid-template-columns: repeat(2, 1fr);
+            // grid-template-rows: repeat(2, auto);
             grid-template-areas:
                 "nosotros-img1 nosotros-img1"
                 "nosotros-img2 nosotros-img3";
-            width: 100%;
+            // width: 100%;
             img{
                 width: 100%;
                 height: 100%;

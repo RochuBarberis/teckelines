@@ -1,11 +1,11 @@
 header {
-    background-color: rgb(226, 217, 208);
+    background-color: $background-header;
     .bg-body-tertiary{
-        --bs-bg-opacity: 0 --bs-tertiary-bg-rgb: rgb(226, 217, 208) background-color: rgba(226, 217, 208, 0 --bs-tertiary-bg-rgb: rgb(226, 217, 208)) !important;
+        --bs-bg-opacity: 0 --bs-tertiary-bg-rgb: rgb(226,217,208) background-color: rgba(226, 217, 208, 0 --bs-tertiary-bg-rgb: rgb(226, 217, 208)) !important;
     }
     nav{
         .container-fluid {
-            background-color: rgb(226, 217, 208);
+            background-color: $background-header;
             .navbar-brand {
                 font-family: 'Indie Flower', cursive;
                 color: rgb(78, 78, 71);

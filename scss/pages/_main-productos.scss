@@ -1,15 +1,17 @@
 main{
     .catalogo-general {
-        display: grid;
-        justify-content: center;
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(2, auto);
-        gap: 10em;
-        width: 70%;
+        // display: grid;
+        // justify-content: center;
+        // grid-template-columns: repeat(2, 1fr);
+        // grid-template-rows: repeat(2, auto);
+        // gap: 10em;
+        // width: 70%;
+        @include grid(center,2,1fr,2,10em,70%);
         .catalogo {
             border: 2px solid dimgray;
             border-radius: 5%;
-            display: grid;
+            display: flex;
+            flex-flow: column wrap;
             box-shadow: 5px 5px 0px 0px gray;
             h2{
                 font-family: 'Satisfy', cursive;

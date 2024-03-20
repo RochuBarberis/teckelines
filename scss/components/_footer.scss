@@ -1,16 +1,29 @@
 footer {
-    background-color: rgb(248, 248, 236);
+    background-color: $background-main;
     padding: 50px 0px 50px 0px;
+    display: flex;
+    justify-content: center;
     a{
-        display: flex;
-        gap: 20px;
-        justify-content: center;
+        display: block;
+        white-space: nowrap;
+        border-right: 4px solid;
         font-family: 'Satisfy', cursive;
         font-size: 5em;
         color: rgb(78, 78, 71);
         text-decoration: none;
+        width: 27ch;
+        animation: typing 6s steps(27), blink .5s infinite step-end alternate;
+        animation-iteration-count: 2;
+        animation-delay: 5s;
+        overflow: hidden;
         img {
-            height: 20px;
+            height: 40px;
         }
     }
+}
+@keyframes typing{
+    from{ width: 0;}
+}
+@keyframes blink {
+    50% {border-color: transparent;}
 }

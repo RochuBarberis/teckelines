@@ -1,3 +1,11 @@
+main .contacto .form .enviar #enviar {
+  padding: 5px;
+  border-radius: 15%;
+  border: darkgrey solid 1px;
+  box-shadow: 2px -2px rgb(246, 236, 226);
+  background-color: rgb(226, 217, 208);
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -18,14 +26,17 @@ main h1 {
   font-size: 5vw;
   color: rgb(85, 67, 67);
   padding: 6vw 0;
+  background-color: transparent;
   text-align: center;
+  animation: animate__pulse;
+  animation-duration: 5s;
 }
 
 header {
   background-color: rgb(226, 217, 208);
 }
 header .bg-body-tertiary {
-  --bs-bg-opacity: 0 --bs-tertiary-bg-rgb: rgb(226, 217, 208) background-color: rgba(226, 217, 208, 0 --bs-tertiary-bg-rgb: rgb(226, 217, 208)) !important;
+  --bs-bg-opacity: 0 --bs-tertiary-bg-rgb: rgb(226,217,208) background-color: rgba(226, 217, 208, 0 --bs-tertiary-bg-rgb: rgb(226, 217, 208)) !important;
 }
 header nav .container-fluid {
   background-color: rgb(226, 217, 208);
@@ -107,7 +118,8 @@ main .catalogo-general {
 main .catalogo-general .catalogo {
   border: 2px solid dimgray;
   border-radius: 5%;
-  display: grid;
+  display: flex;
+  flex-flow: column wrap;
   box-shadow: 5px 5px 0px 0px gray;
 }
 main .catalogo-general .catalogo h2 {
@@ -141,12 +153,13 @@ main .catalogo-general .catalogo div button .carousel-control-next-icon {
 
 main .fotos {
   display: grid;
+  justify-content: center;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(4, auto);
-  grid-template-areas: "img1 img1 img9 img3" "img4 img2 img9 img3" "img4 img6 img7 img7" "img8 img8 img5 img10";
-  width: 90%;
-  padding-top: 20px;
   gap: 1em;
+  width: 90%;
+  grid-template-areas: "img1 img1 img9 img3" "img4 img2 img9 img3" "img4 img6 img7 img7" "img8 img8 img5 img10";
+  padding-top: 20px;
 }
 main .fotos img {
   width: 100%;
@@ -185,7 +198,10 @@ main .fotos .img10 {
 }
 main .video {
   display: grid;
-  grid-template-columns: 1fr;
+  justify-content: center;
+  grid-template-columns: repeat(1, 1fr);
+  grid-template-rows: repeat(1, auto);
+  gap: 0;
   width: 90%;
   padding-top: 1rem;
 }
@@ -209,8 +225,9 @@ main .nosotros .nosotros-imagenes {
   justify-content: center;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(2, auto);
-  grid-template-areas: "nosotros-img1 nosotros-img1" "nosotros-img2 nosotros-img3";
+  gap: 0;
   width: 100%;
+  grid-template-areas: "nosotros-img1 nosotros-img1" "nosotros-img2 nosotros-img3";
 }
 main .nosotros .nosotros-imagenes img {
   width: 100%;
@@ -236,7 +253,9 @@ main .nosotros .nosotros-p {
 
 main .contacto {
   display: grid;
+  justify-content: center;
   grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(1, auto);
   gap: 3em;
   width: 80%;
 }
@@ -282,13 +301,6 @@ main .contacto .form .enviar {
   display: flex;
   justify-content: center;
 }
-main .contacto .form .enviar #enviar {
-  padding: 5px;
-  border-radius: 15%;
-  border: darkgrey solid 1px;
-  box-shadow: 2px -2px rgb(246, 236, 226);
-  background-color: rgb(226, 217, 208);
-}
 main .contacto .form .enviar #enviar:focus {
   background-color: rgb(86, 64, 64);
   color: aliceblue;
@@ -297,20 +309,37 @@ main .contacto .form .enviar #enviar:focus {
 footer {
   background-color: rgb(248, 248, 236);
   padding: 50px 0px 50px 0px;
+  display: flex;
+  justify-content: center;
 }
 footer a {
-  display: flex;
-  gap: 20px;
-  justify-content: center;
+  display: block;
+  white-space: nowrap;
+  border-right: 4px solid;
   font-family: "Satisfy", cursive;
   font-size: 5em;
   color: rgb(78, 78, 71);
   text-decoration: none;
+  width: 27ch;
+  animation: typing 6s steps(27), blink 0.5s infinite step-end alternate;
+  animation-iteration-count: 2;
+  animation-delay: 5s;
+  overflow: hidden;
 }
 footer a img {
-  height: 20px;
+  height: 40px;
 }
 
+@keyframes typing {
+  from {
+    width: 0;
+  }
+}
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
 @media screen and (min-width: 992px) {
   header .navbar-expand-lg {
     display: flex;
@@ -361,7 +390,7 @@ footer a img {
   main .catalogo-general {
     display: grid;
     justify-content: center;
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(1, 1fr);
     grid-template-rows: repeat(4, auto);
     gap: 3em;
     width: 60%;
@@ -377,17 +406,18 @@ footer a img {
   }
   main .fotos {
     display: grid;
-    grid-template-columns: 1fr;
+    justify-content: center;
+    grid-template-columns: repeat(1, 1fr);
     grid-template-rows: repeat(10, auto);
-    grid-template-areas: "img1" "img2" "img3" "img4" "img5" "img6" "img7" "img8" "img9" "img10";
-    width: 90%;
-    padding-top: 20px;
     gap: 1em;
+    width: 90%;
+    grid-template-areas: "img1" "img2" "img3" "img4" "img5" "img6" "img7" "img8" "img9" "img10";
+    padding-top: 20px;
   }
   main .nosotros {
     display: grid;
     justify-content: center;
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(1, 1fr);
     grid-template-rows: repeat(2, auto);
     gap: 1em;
     width: 80%;
@@ -398,7 +428,9 @@ footer a img {
   }
   main .contacto {
     display: grid;
-    grid-template-columns: 1fr;
+    justify-content: center;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(1, auto);
     gap: 3em;
     width: 80%;
   }
@@ -424,6 +456,19 @@ footer a img {
   }
   main .catalogo-general .catalogo div .carousel-inner .carrousel-item {
     height: 180px;
+  }
+  main .nosotros {
+    display: flex;
+    position: relative;
+  }
+  main .nosotros .nosotros-p {
+    display: flex;
+    position: absolute;
+    background-color: transparent;
+    color: floralwhite;
+  }
+  main .nosotros .nosotros-imagenes img {
+    mask-image: linear-gradient(to right, rgba(155, 151, 151, 0.8), rgba(155, 151, 151, 0.6));
   }
 }
 
