@@ -435,16 +435,20 @@ footer a img {
     padding-top: 20px;
   }
   main .nosotros {
-    display: grid;
-    justify-content: center;
-    grid-template-columns: repeat(1, 1fr);
-    grid-template-rows: repeat(2, auto);
-    gap: 1em;
-    width: 80%;
-    align-items: center;
+    display: flex;
+    position: relative;
   }
   main .nosotros .nosotros-p {
+    display: flex;
+    position: absolute;
+    padding: 2px;
+    background-color: transparent;
+    color: floralwhite;
+    text-shadow: rgb(10, 10, 10) 1px 0 10px;
     font-size: 5vw;
+  }
+  main .nosotros .nosotros-imagenes img {
+    mask-image: linear-gradient(to right, rgba(155, 151, 151, 0.8), rgba(155, 151, 151, 0.6));
   }
   main .contacto {
     display: grid;
