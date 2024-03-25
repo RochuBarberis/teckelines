@@ -9,6 +9,7 @@ main{
         @include grid(center,2,1fr,2,10em,70%);
         .catalogo {
             border: 2px solid dimgray;
+            padding: 10px;
             border-radius: 5%;
             display: flex;
             flex-flow: column wrap;
@@ -23,6 +24,7 @@ main{
             div{
                 .carousel-inner{
                     height: 320px;
+                    border-radius: 5% 5%;
                     .carrousel-item{
                         height: 320px;
                         width: 90%;
@@ -35,6 +37,7 @@ main{
                     div{
                         img{
                             border-radius: 5% 5%;
+                            height: 300px;
                         }
                     }
                 }

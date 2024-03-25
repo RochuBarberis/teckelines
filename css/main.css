@@ -71,6 +71,9 @@ header nav .container-fluid div .navbar-nav .nav-list {
   font-size: 1.7vw;
   background-color: transparent;
 }
+header nav .container-fluid div .navbar-nav .nav-list:hover {
+  color: aliceblue;
+}
 
 .portada .imagen-con-texto {
   display: flex;
@@ -117,6 +120,7 @@ main .catalogo-general {
 }
 main .catalogo-general .catalogo {
   border: 2px solid dimgray;
+  padding: 10px;
   border-radius: 5%;
   display: flex;
   flex-flow: column wrap;
@@ -131,6 +135,7 @@ main .catalogo-general .catalogo h2 {
 }
 main .catalogo-general .catalogo div .carousel-inner {
   height: 320px;
+  border-radius: 5% 5%;
 }
 main .catalogo-general .catalogo div .carousel-inner .carrousel-item {
   height: 320px;
@@ -143,6 +148,7 @@ main .catalogo-general .catalogo div .carousel-inner .carrousel-item {
 }
 main .catalogo-general .catalogo div .carousel-inner div img {
   border-radius: 5% 5%;
+  height: 300px;
 }
 main .catalogo-general .catalogo div button .carousel-control-prev-icon {
   background-color: transparent;
@@ -280,16 +286,19 @@ main .contacto .form div #nombre {
   border: darkgrey solid 1px;
   resize: none;
   padding-left: 2px;
+  width: 40ch;
 }
 main .contacto .form div #email {
   border: darkgrey solid 1px;
   resize: none;
   padding-left: 2px;
+  width: 40ch;
 }
 main .contacto .form div #mensaje {
   border: darkgrey solid 1px;
   resize: none;
   padding-left: 2px;
+  width: 40ch;
 }
 main .contacto .form div input {
   font-size: 1.2vw;
@@ -356,13 +365,17 @@ footer a img {
   header .navbar-expand-lg .container-fluid .navbar-collapse .navbar-nav {
     background-color: transparent;
   }
+  main .imagen-con-texto .portada-mobile {
+    visibility: hidden;
+    display: none;
+  }
 }
 @media screen and (max-width: 991px) {
   header nav .container-fluid {
     padding-left: 0;
   }
   header nav .container-fluid .navbar-brand {
-    font-size: 12vw;
+    font-size: 9vw;
   }
   header nav .container-fluid div .navbar-nav {
     position: absolute;
@@ -376,10 +389,14 @@ footer a img {
     padding-left: calc(var(--bs-gutter-x) * 0);
   }
   header nav .container-fluid div .navbar-nav .nav-list {
-    font-size: 4vw;
+    font-size: 2.5vw;
   }
   main h1 {
     font-size: 8vw;
+  }
+  main .imagen-con-texto .portada-mobile {
+    visibility: hidden;
+    display: none;
   }
   main .imagen-con-texto p {
     font-size: 3.5vw;
@@ -403,6 +420,9 @@ footer a img {
   }
   main .catalogo-general .catalogo div .carousel-inner .carrousel-item {
     height: 270px;
+  }
+  main .catalogo-general .catalogo div .carousel-inner div img {
+    height: 255px;
   }
   main .fotos {
     display: grid;
@@ -444,21 +464,35 @@ footer a img {
     font-size: 2.5vw;
   }
   footer a {
-    font-size: 6vw;
+    font-size: 5.5vw;
+  }
+  footer a img {
+    height: 30px;
   }
 }
 @media screen and (max-width: 600px) {
-  header nav div .navbar-toggler-icon {
-    font-size: 20px;
+  header nav .container-fluid .navbar-toggler .navbar-toggler-icon {
+    font-size: 15px;
+  }
+  main .imagen-con-texto .portada-responsive {
+    visibility: hidden;
+    display: none;
+  }
+  main .imagen-con-texto .portada-mobile {
+    visibility: visible;
+    display: block;
   }
   main .boton-productos a {
     font-size: 15px;
   }
   main .catalogo-general .catalogo div .carousel-inner {
-    height: 180px;
+    height: 150px;
   }
   main .catalogo-general .catalogo div .carousel-inner .carrousel-item {
-    height: 180px;
+    height: 150px;
+  }
+  main .catalogo-general .catalogo div .carousel-inner div img {
+    height: 145px;
   }
   main .nosotros {
     display: flex;
@@ -470,6 +504,7 @@ footer a img {
     padding: 2px;
     background-color: transparent;
     color: floralwhite;
+    text-shadow: rgb(10, 10, 10) 1px 0 10px;
   }
   main .nosotros .nosotros-imagenes img {
     mask-image: linear-gradient(to right, rgba(155, 151, 151, 0.8), rgba(155, 151, 151, 0.6));

@@ -35,6 +35,9 @@ header {
                         font-weight: bold;
                         font-size: 1.7vw;
                         background-color: transparent;
+                        &:hover{
+                            color:aliceblue;
+                        }
                     }
                 }
             }

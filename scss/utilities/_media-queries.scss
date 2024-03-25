@@ -18,6 +18,14 @@
             }
         }
     }
+    main{
+        .imagen-con-texto{
+            .portada-mobile{
+                visibility: hidden;
+                display: none;
+            }
+        }
+    }
 }
 
 @media screen and (max-width: 991px) {
@@ -26,7 +34,7 @@
             .container-fluid{
                 padding-left: 0;
                 .navbar-brand {
-                    font-size: 12vw;
+                    font-size: 9vw;
                 }
                 div{
                     .navbar-nav {
@@ -40,7 +48,7 @@
                         --bs-gutter-x: 0;
                         padding-left: calc(var(--bs-gutter-x) *0);
                         .nav-list {
-                            font-size: 4vw;
+                            font-size: 2.5vw;
                         }
                     }
                 }
@@ -52,6 +60,10 @@
             font-size: 8vw;
         }
         .imagen-con-texto{
+            .portada-mobile{
+                visibility: hidden;
+                display: none;
+            }
             p{
                 font-size: 3.5vw;
             }
@@ -76,6 +88,11 @@
                         height: 270px;
                         .carrousel-item {
                             height: 270px;
+                        }
+                        div{
+                            img{
+                                height: 255px;
+                            }
                         }
                     }
                 }
@@ -137,21 +154,36 @@
     }
     footer{
         a{
-            font-size: 6vw;
+            font-size: 5.5vw;
+            img{
+                height: 30px;
+            }
         }
     }
 }
 @media screen and (max-width:600px){
     header{
         nav{
-            div{
-                .navbar-toggler-icon {
-                    font-size: 20px;
+            .container-fluid{
+                .navbar-toggler{
+                    .navbar-toggler-icon {
+                        font-size: 15px;
+                    }
                 }
             }
         }
     }
     main{
+        .imagen-con-texto{
+            .portada-responsive{
+                visibility: hidden;
+                display: none;
+            }
+            .portada-mobile{
+                visibility:visible ;
+                display: block;
+            }
+        }
         .boton-productos{
             a{
                 font-size: 15px;
@@ -161,9 +193,14 @@
             .catalogo{
                 div{
                     .carousel-inner{
-                        height: 180px;
+                        height: 150px;
                         .carrousel-item {
-                            height: 180px;
+                            height: 150px;
+                        }
+                        div{
+                            img{
+                                height: 145px;
+                            }
                         }
                     }
                 }
@@ -177,7 +214,8 @@
                 position: absolute;
                 padding: 2px;
                 background-color: transparent;
-                color:floralwhite
+                color:floralwhite;
+                text-shadow: rgb(10, 10, 10) 1px 0 10px;;
             }
             .nosotros-imagenes{
                 img{
