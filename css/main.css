@@ -375,7 +375,7 @@ footer a img {
     padding-left: 0;
   }
   header nav .container-fluid .navbar-brand {
-    font-size: 9vw;
+    font-size: 40px;
   }
   header nav .container-fluid div .navbar-nav {
     position: absolute;
@@ -389,10 +389,10 @@ footer a img {
     padding-left: calc(var(--bs-gutter-x) * 0);
   }
   header nav .container-fluid div .navbar-nav .nav-list {
-    font-size: 2.5vw;
+    font-size: 12.5px;
   }
   main h1 {
-    font-size: 8vw;
+    font-size: 28px;
   }
   main .imagen-con-texto .portada-mobile {
     visibility: hidden;
