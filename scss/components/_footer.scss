@@ -2,9 +2,12 @@ footer {
     background-color: $background-main;
     padding: 50px 0px 50px 0px;
     display: flex;
+    position: relative;
     justify-content: center;
     a{
         display: block;
+        top: 30px;
+        position: absolute;
         white-space: nowrap;
         border-right: 4px solid;
         font-family: 'Satisfy', cursive;
@@ -19,6 +22,16 @@ footer {
         img {
             height: 40px;
         }
+    }
+    p{
+        display: flex;
+        flex-flow: column;
+        position:absolute;
+        font-size: 8px;
+        bottom: 0.01px;
+        left: 1px;
+        margin-bottom: 2px;
+        color: gray ;
     }
 }
 @keyframes typing{

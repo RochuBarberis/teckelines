@@ -13,6 +13,9 @@
                     background-color: transparent;
                     .navbar-nav{
                         background-color: transparent;
+                        height: 100px;
+                        align-items: center;
+                        padding-right: 30px;
                     }
                 }
             }
@@ -34,12 +37,11 @@
             .container-fluid{
                 padding-left: 0;
                 .navbar-brand {
-                    font-size: 40px;
+                    font-size: 9vw;
                 }
                 div{
                     .navbar-nav {
                         position: absolute;
-                        top: 15vw;
                         width: 100%;
                         padding: 0 25px 0px 0px;
                         margin: 0;
@@ -48,7 +50,7 @@
                         --bs-gutter-x: 0;
                         padding-left: calc(var(--bs-gutter-x) *0);
                         .nav-list {
-                            font-size: 12.5px;
+                            font-size: 15px;
                         }
                     }
                 }
@@ -57,20 +59,24 @@
     }
     main{
         h1{
-            font-size: 28px;
+            font-size: 5.5vw;
         }
+    }
+    .portada{
         .imagen-con-texto{
             .portada-mobile{
                 visibility: hidden;
                 display: none;
             }
             p{
-                font-size: 3.5vw;
+                font-size: 22px;
             }
         }
         .boton-productos {
             font-size: 4vw;
         }
+    }
+    main{
         .catalogo-general {
             // display: grid;
             // justify-content: center;
@@ -115,7 +121,6 @@
                 "img9"
                 "img10";
             // width: 90%;
-            padding-top: 20px;
             // gap: 1em;
         }
         .nosotros{
@@ -159,7 +164,7 @@
     }
     footer{
         a{
-            font-size: 5.5vw;
+            font-size: 28px;
             img{
                 height: 30px;
             }
@@ -172,13 +177,13 @@
             .container-fluid{
                 .navbar-toggler{
                     .navbar-toggler-icon {
-                        font-size: 15px;
+                        font-size: 25px;
                     }
                 }
             }
         }
     }
-    main{
+    .portada{
         .imagen-con-texto{
             .portada-responsive{
                 visibility: hidden;
@@ -188,12 +193,17 @@
                 visibility:visible ;
                 display: block;
             }
+            p{
+                font-size: 14px;
+            }
         }
         .boton-productos{
             a{
                 font-size: 15px;
             }
         }
+    }
+    main{
         .catalogo-general{
             .catalogo{
                 div{
@@ -226,6 +236,14 @@
                 img{
                     mask-image: linear-gradient(to right, rgba(155, 151, 151, .8), rgba(155, 151, 151, 0.6));
                 }
+            }
+        }
+    }
+    footer{
+        a{
+            font-size: 5.5vw;
+            img{
+                height: 6vw;
             }
         }
     }
